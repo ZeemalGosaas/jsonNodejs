@@ -1,0 +1,11 @@
+//json
+//{"name":"zeemal","age":23,"channel":"thapa technical"}
+//object convert to json
+const jsonData = JSON.stringify(biodata);
+//console.log(jsonData.channel); (wrong method)
+console.log(jsonData); //after this output will be {"name":"zeemal","age":23,"channel":"thapa technical"}
+
+//json to object
+const objData = JSON.parse(jsonData);
+console.log(objData); //after this output will be { name: 'zeemal', age: 23, channel: 'thapa technical' }
+console.log(objData.channel); //right approach
